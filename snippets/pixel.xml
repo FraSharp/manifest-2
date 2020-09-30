@@ -11,6 +11,13 @@
           revision="ten-plus"
           review="gerrit.pixelexperience.org" />
 
+  <remote name="pixel-gitlab"
+          fetch="https://gitlab.pixelexperience.org/android"
+          revision="ten" />
+
+   <!-- External repos -->
+  <project path="external/motorola/faceunlock" name="external_motorola_faceunlock" remote="pixel-gitlab" />
+
   <!-- CodeAurora additions -->
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="pixel" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="pixel" />
